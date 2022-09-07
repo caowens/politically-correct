@@ -1,11 +1,12 @@
 import './App.css';
 import NavBar from './components/NavBar';
+import BiasNavBar from './components/BiasNavBar';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <h1>Hello World</h1> */}
+      <BiasNavBar />
     </div>
   );
 }
