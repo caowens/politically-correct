@@ -15,26 +15,23 @@ export default function NavBar() {
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        More
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">MediaBias</a></li>
+                        <li><a class="dropdown-item" href="#">Credibility Scores</a></li>
                         <li><hr class="dropdown-divider"></hr></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Networks</a></li>
                     </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-dark " type="submit">Search</button>
                 </form>
                 </div>
             </div>
