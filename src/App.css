@@ -10,3 +10,32 @@
 .bg-purple {
   background-color: blueviolet;
 }
+.container-1 {
+  display: flex;
+}
+.container-1 div {
+  /* border: 1px #ccc solid; */
+  padding: 10px;
+}
+
+.box-1 {
+  flex: 1;
+}
+.box-2 {
+  flex: 2;
+}
+.box-3 {
+  flex: 1;
+}
+
+.card-group {
+  padding: 8px;
+  margin: 8px;
+}
+
+.card-group > .card {
+  /* margin: 1px; */
+  /* border-color: black; */
+  /* border: 8px; */
+  /* padding: 2px; */
+}
