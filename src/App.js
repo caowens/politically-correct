@@ -1,9 +1,10 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import BiasNavBar from './components/BiasNavBar';
-import Card from './components/Card';
-import Layout from './components/Layout';
-import RowLayout from './components/RowLayout';
+import Center from './pages/Center';
+import Left from './pages/Left';
+import Right from './pages/Right';
 
 function App() {
   return (
@@ -11,9 +12,19 @@ function App() {
       
       <NavBar />
       <BiasNavBar />
-      <Layout />
+
+    
+      <div className='routes-wrapper'>
+        <Routes>
+          <Route path="left" element={<Left/>} />
+          <Route path="center" element={<Center/>} />
+          <Route path="right" element={<Right/>} />
+        </Routes>
+      </div>
+      
+      {/* <Layout />
       <RowLayout />
-      <RowLayout />
+      <RowLayout /> */}
       {/* <Card /> */}
       {/* <img src={require("./images/Screen Shot 2022-08-29 at 11.43.58 PM.png")} class="img-fluid" alt="..."></img> */}
       {/* src/images/Screen Shot 2022-08-29 at 11.43.58 PM.png */}

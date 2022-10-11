@@ -1,17 +1,24 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 export default function BiasNavBar() {
-    return (
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Left</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-purple" href="#">Center</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-red" href="#">Right</a>
-            </li>
-        </ul>
-    )
+  return (
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <Link className="nav-link active" aria-current="page" to="left">
+          Left
+        </Link>
+      </li>
+      <li class="nav-item">
+        <Link className="nav-link text-purple" to="center">
+          Center
+        </Link>
+      </li>
+      <li class="nav-item">
+        <Link className="nav-link text-red" to="right">
+          Right
+        </Link>
+      </li>
+    </ul>
+  );
 }
