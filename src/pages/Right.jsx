@@ -1,13 +1,25 @@
 import React from "react";
 import Layout from '../components/Layout';
 import RowLayout from '../components/RowLayout';
+import Card from '../components/Card';
+import CardLong from '../components/CardLong';
 
 export default function Right() {
   return (
     <>
-      <Layout />
-      <RowLayout />
-      <RowLayout />
+        <div className='container-1'>
+        <div className='box-7'>
+          <CardLong border='border-danger' text='text-danger'/>
+        </div>
+        <div className='box-8'>
+          <CardLong border='border-danger' text='text-danger'/>
+        </div>
+        <div className='box-9'>
+          <Card border='border-danger' text='text-danger'/>
+        </div>
+      </div>
+      <RowLayout border='border-danger' text='text-danger'/>
+      <RowLayout border='border-danger' text='text-danger'/>
     </>
   );
 }
