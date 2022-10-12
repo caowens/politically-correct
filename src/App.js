@@ -10,10 +10,12 @@ function App() {
   return (
     <div className="App">
       
+      {/* NavBars for every page */}
       <NavBar />
       <BiasNavBar />
 
     
+      {/* Links to each media bias page */}
       <div className='routes-wrapper'>
         <Routes>
           <Route path="left" element={<Left/>} />
@@ -22,12 +24,6 @@ function App() {
         </Routes>
       </div>
       
-      {/* <Layout />
-      <RowLayout />
-      <RowLayout /> */}
-      {/* <Card /> */}
-      {/* <img src={require("./images/Screen Shot 2022-08-29 at 11.43.58 PM.png")} class="img-fluid" alt="..."></img> */}
-      {/* src/images/Screen Shot 2022-08-29 at 11.43.58 PM.png */}
     </div>
   );
 }
