@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from '../components/Layout';
 import RowLayout from '../components/RowLayout';
 import Card from '../components/Card';
 import CardLong from '../components/CardLong';

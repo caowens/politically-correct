@@ -5,6 +5,9 @@ import BiasNavBar from './components/BiasNavBar';
 import Center from './pages/Center';
 import Left from './pages/Left';
 import Right from './pages/Right';
+import Home from './pages/Home';
+import Axios from "axios";
+import "./App.css";
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
       {/* Links to each media bias page */}
       <div className='routes-wrapper'>
         <Routes>
+          <Route path="/" element={<Home/>} />
           <Route path="left" element={<Left/>} />
           <Route path="center" element={<Center/>} />
           <Route path="right" element={<Right/>} />
