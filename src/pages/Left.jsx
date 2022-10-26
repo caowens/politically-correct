@@ -42,17 +42,31 @@ export default function Left() {
           <Card
             border="border-primary"
             textColor="text-primary"
-            title={myData.articles[0].title}
-            img={myData.articles[0].media}
-            excerpt={myData.articles[0].excerpt}
-            source={myData.articles[0].clean_url}
+            title={myData.articles[4].title}
+            img={myData.articles[4].media}
+            excerpt={myData.articles[4].excerpt}
+            source={myData.articles[4].clean_url}
           />
         </div>
         <div className="box-5">
-          <CardLong border="border-primary" text="text-primary" />
+          <CardLong
+            border="border-primary"
+            textColor="text-primary"
+            title={myData.articles[9].title}
+            img={myData.articles[9].media}
+            excerpt={myData.articles[9].summary}
+            source={myData.articles[9].clean_url}
+          />
         </div>
         <div className="box-6">
-          <CardLong border="border-primary" text="text-primary" />
+          <CardLong
+            border="border-primary"
+            textColor="text-primary"
+            title={myData.articles[14].title}
+            img={myData.articles[14].media}
+            excerpt={myData.articles[14].summary}
+            source={myData.articles[14].clean_url}
+          />
         </div>
       </div>
       {articles.map((item, key) => (
