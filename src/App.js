@@ -1,4 +1,5 @@
 import './App.css';
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import BiasNavBar from './components/BiasNavBar';
@@ -8,6 +9,7 @@ import Right from './pages/Right';
 import Home from './pages/Home';
 import Axios from "axios";
 import "./App.css";
+import myData from './data/news.json';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       {/* NavBars for every page */}
       <NavBar />
       <BiasNavBar />
+      {/* <h1>Hello</h1>
+      {myData.articles.map((item)=><p>{item.title}</p>)} */}
 
     
       {/* Links to each media bias page */}

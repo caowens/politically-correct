@@ -51,9 +51,7 @@
   margin: 8px;
 }
 
-.card-group > .card {
-  /* margin: 1px; */
-  /* border-color: black; */
-  /* border: 8px; */
-  /* padding: 2px; */
+.card:hover {
+  cursor: pointer;
+	transform: scale(1.1);
 }
