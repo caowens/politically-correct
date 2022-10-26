@@ -46,6 +46,7 @@ export default function Left() {
             img={myData.articles[4].media}
             excerpt={myData.articles[4].excerpt}
             source={myData.articles[4].clean_url}
+            link={myData.articles[4].link}
           />
         </div>
         <div className="box-5">

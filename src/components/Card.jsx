@@ -10,7 +10,7 @@ export default function Card(props) {
             class="card-img-top"
             alt="..."
           ></img>
-          <a href="#">
+          <a href={`${props.link}`} target="_blank" class={`${props.textColor}`}>
             <h5 class="card-title">{props.title}</h5>
           </a>
           <p class="card-text">
