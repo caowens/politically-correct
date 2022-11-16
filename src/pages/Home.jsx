@@ -1,6 +1,7 @@
 import React from 'react';
 import RowLayout from '../components/RowLayout';
-import myData from '../data/news.json';
+import myData from '../data/LatestHeadlinesWithSources.json';
+import mediaBiasData from '../data/MediaBiasData.json';
 
 export default function Home() {
     // Have a list of 4 articles
