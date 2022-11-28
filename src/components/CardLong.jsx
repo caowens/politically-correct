@@ -5,7 +5,7 @@ export default function CardLong(props) {
     <>
       <div className={`card ${props.border}`}>
         <img
-          src={`${props.img}`}
+          src={`${props.img}` ? `${props.img}` : `https://designshack.net/wp-content/uploads/placeholder-image.png`}
           class="card-img-top"
           alt="..."
         ></img>

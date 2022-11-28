@@ -6,7 +6,7 @@ export default function Card(props) {
       <div className={`card mb-3 ${props.border}`}>
         <div class={`card-body ${props.textColor}`}>
           <img
-            src={`${props.img}`}
+            src={`${props.img}` ? `${props.img}` : `https://designshack.net/wp-content/uploads/placeholder-image.png`}
             class="card-img-top"
             alt="..."
           ></img>
