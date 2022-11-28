@@ -59,8 +59,6 @@ function App() {
       {/* NavBars for every page */}
       <NavBar />
       <BiasNavBar />
-      {/* <h1>Hello</h1>
-      {myData.articles.map((item)=><p>{item.title}</p>)} */}
 
       {/* Links to each media bias page */}
       <div className="routes-wrapper">

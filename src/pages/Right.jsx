@@ -46,6 +46,7 @@ export default function Right() {
             img={right[9].media}
             excerpt={right[9].summary}
             source={right[9].clean_url}
+            link={right[9].link}
           />
         </div>
         <div className="box-8">
@@ -56,6 +57,7 @@ export default function Right() {
             img={right[14].media}
             excerpt={right[14].summary}
             source={right[14].clean_url}
+            link={right[14].link}
           />
         </div>
         <div className="box-9">

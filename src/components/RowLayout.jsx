@@ -14,6 +14,7 @@ export default function RowLayout(props) {
             img={article.media}
             excerpt={article.excerpt}
             source={article.clean_url}
+            link={article.link}
           />
         ))}
       </div>

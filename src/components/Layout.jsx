@@ -14,6 +14,7 @@ export default function Layout(props) {
             img={props.articles[1].media}
             excerpt={props.articles[1].summary}
             source={props.articles[1].clean_url}
+            link={props.articles[1].link}
           />
         </div>
         <div className='box-2'>
@@ -33,6 +34,7 @@ export default function Layout(props) {
             img={props.articles[2].media}
             excerpt={props.articles[2].summary}
             source={props.articles[2].clean_url}
+            link={props.articles[2].link}
           />
         </div>
       </div>

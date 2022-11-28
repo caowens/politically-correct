@@ -57,6 +57,7 @@ export default function Left() {
             img={left[9].media}
             excerpt={left[9].summary}
             source={left[9].clean_url}
+            link={left[9].link}
           />
         </div>
         <div className="box-6">
@@ -67,6 +68,7 @@ export default function Left() {
             img={left[14].media}
             excerpt={left[14].summary}
             source={left[14].clean_url}
+            link={left[14].link}
           />
         </div>
       </div>
@@ -74,8 +76,6 @@ export default function Left() {
         <RowLayout
           row={item}
           key={key}
-          // border="border-primary"
-          // textColor="text-primary"
         />
       ))}
     </>

@@ -55,3 +55,11 @@
   cursor: pointer;
 	transform: scale(1.1);
 }
+
+.a-border-primary {
+  color: #0d6efd;
+}
+
+.a-border-danger {
+  color: #dc3545;
+}
