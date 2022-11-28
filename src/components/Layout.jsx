@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from './Card';
 import CardLong from './CardLong';
-import props from "../data/news.json";
 
 export default function Layout(props) {
   return (
@@ -9,8 +8,8 @@ export default function Layout(props) {
         <div className='container-1'>
         <div className='box-1'>
         <CardLong
-            border="border-primary"
-            textColor="text-primary"
+            border={props.articles[1].rating.includes('left') ? 'border-primary' : props.articles[1].rating.includes('right') && 'border-danger'}
+            textColor={props.articles[1].rating.includes('left') ? 'text-primary' : props.articles[1].rating.includes('right') && 'text-danger'}
             title={props.articles[1].title}
             img={props.articles[1].media}
             excerpt={props.articles[1].summary}
@@ -28,8 +27,8 @@ export default function Layout(props) {
         </div>
         <div className='box-3'>
         <CardLong
-            border="border-danger"
-            textColor="text-danger"
+            border={props.articles[2].rating.includes('left') ? 'border-primary' : props.articles[2].rating.includes('right') && 'border-danger'}
+            textColor={props.articles[2].rating.includes('left') ? 'text-primary' : props.articles[2].rating.includes('right') && 'text-danger'}
             title={props.articles[2].title}
             img={props.articles[2].media}
             excerpt={props.articles[2].summary}

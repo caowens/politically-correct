@@ -2,6 +2,7 @@ import React from "react";
 import Layout from '../components/Layout';
 import RowLayout from '../components/RowLayout';
 import myData from "../data/news.json";
+import { center } from "../App";
 
 export default function Center() {
   // Have a list of 4 articles
@@ -15,17 +16,17 @@ export default function Center() {
   let i = 0;
   let j = 0;
   let row = [];
-  while (i < myData.articles.length) {
+  while (i < center.length) {
     // Test if last item in the array (In the case that the row is less than 4)
-    if (myData.articles[i] === myData.articles[myData.articles.length - 1]) {
-      row.push(myData.articles[i]);
+    if (center[i] === center[center.length - 1]) {
+      row.push(center[i]);
       articles.push(row);
       break;
     }
 
     // Each row will need 4 articles
     else if (j < 4) {
-      row.push(myData.articles[i]);
+      row.push(center[i]);
       j++;
     } else {
       j = 0;
@@ -35,9 +36,9 @@ export default function Center() {
     i++;
   }
   const layoutArticles = [];
-  layoutArticles.push(myData.articles[4]);
-  layoutArticles.push(myData.articles[9]);
-  layoutArticles.push(myData.articles[14]);
+  layoutArticles.push(center[0]);
+  layoutArticles.push(center[1]);
+  layoutArticles.push(center[2]);
   return (
     <>
       <Layout articles={layoutArticles}/>
@@ -45,8 +46,6 @@ export default function Center() {
         <RowLayout
           row={item}
           key={key}
-          border="border-danger"
-          textColor="text-danger"
         />
       ))}
     </>
