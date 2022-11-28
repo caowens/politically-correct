@@ -1,7 +1,8 @@
 import React from 'react';
 import RowLayout from '../components/RowLayout';
-import myData from '../data/LatestHeadlinesWithSources.json';
+// import combined_articles from '../data/LatestHeadlinesWithSources.json';
 import mediaBiasData from '../data/MediaBiasData.json';
+import { combined_articles, center, left, right, no_rating } from '../App.js';
 
 export default function Home() {
     // Have a list of 4 articles
@@ -15,17 +16,17 @@ export default function Home() {
     let i = 0;
     let j = 0;
     let row = [];
-    while (i < myData.articles.length) {
+    while (i < combined_articles.length) {
         // Test if last item in the array (In the case that the row is less than 4)
-        if (myData.articles[i] === myData.articles[myData.articles.length - 1]) {
-            row.push(myData.articles[i]);
+        if (combined_articles[i] === combined_articles[combined_articles.length - 1]) {
+            row.push(combined_articles[i]);
             articles.push(row);
             break;
         }
 
         // Each row will need 4 articles
         else if (j < 4) {
-            row.push(myData.articles[i]);
+            row.push(combined_articles[i]);
             j++;
         }
         else {
