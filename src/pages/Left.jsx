@@ -2,7 +2,7 @@ import React from "react";
 import RowLayout from "../components/RowLayout";
 import Card from "../components/Card";
 import CardLong from "../components/CardLong";
-import myData from "../data/news.json";
+import { left } from "../App";
 
 export default function Left() {
   // Have a list of 4 articles
@@ -16,17 +16,17 @@ export default function Left() {
   let i = 0;
   let j = 0;
   let row = [];
-  while (i < myData.articles.length) {
+  while (i < left.length) {
     // Test if last item in the array (In the case that the row is less than 4)
-    if (myData.articles[i] === myData.articles[myData.articles.length - 1]) {
-      row.push(myData.articles[i]);
+    if (left[i] === left[left.length - 1]) {
+      row.push(left[i]);
       articles.push(row);
       break;
     }
 
     // Each row will need 4 articles
     else if (j < 4) {
-      row.push(myData.articles[i]);
+      row.push(left[i]);
       j++;
     } else {
       j = 0;
@@ -42,31 +42,31 @@ export default function Left() {
           <Card
             border="border-primary"
             textColor="text-primary"
-            title={myData.articles[4].title}
-            img={myData.articles[4].media}
-            excerpt={myData.articles[4].excerpt}
-            source={myData.articles[4].clean_url}
-            link={myData.articles[4].link}
+            title={left[4].title}
+            img={left[4].media}
+            excerpt={left[4].excerpt}
+            source={left[4].clean_url}
+            link={left[4].link}
           />
         </div>
         <div className="box-5">
           <CardLong
             border="border-primary"
             textColor="text-primary"
-            title={myData.articles[9].title}
-            img={myData.articles[9].media}
-            excerpt={myData.articles[9].summary}
-            source={myData.articles[9].clean_url}
+            title={left[9].title}
+            img={left[9].media}
+            excerpt={left[9].summary}
+            source={left[9].clean_url}
           />
         </div>
         <div className="box-6">
           <CardLong
             border="border-primary"
             textColor="text-primary"
-            title={myData.articles[14].title}
-            img={myData.articles[14].media}
-            excerpt={myData.articles[14].summary}
-            source={myData.articles[14].clean_url}
+            title={left[14].title}
+            img={left[14].media}
+            excerpt={left[14].summary}
+            source={left[14].clean_url}
           />
         </div>
       </div>
@@ -74,8 +74,8 @@ export default function Left() {
         <RowLayout
           row={item}
           key={key}
-          border="border-primary"
-          textColor="text-primary"
+          // border="border-primary"
+          // textColor="text-primary"
         />
       ))}
     </>

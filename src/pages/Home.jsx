@@ -1,8 +1,6 @@
 import React from 'react';
 import RowLayout from '../components/RowLayout';
-// import combined_articles from '../data/LatestHeadlinesWithSources.json';
-import mediaBiasData from '../data/MediaBiasData.json';
-import { combined_articles, center, left, right, no_rating } from '../App.js';
+import { combined_articles } from '../App.js';
 
 export default function Home() {
     // Have a list of 4 articles
