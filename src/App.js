@@ -11,6 +11,7 @@ import "./App.css";
 import headlines from "./data/LatestHeadlinesWithSources.json";
 import MBData from "./data/MBDS_with_clean_urls.json";
 import SearchResults from "./pages/SearchResults";
+import Sources from "./pages/Sources";
 
 // Create new array to hold a combined object of both the media bias info and the article info
 export const combined_articles = [];
@@ -50,6 +51,7 @@ combined_articles.forEach((article) => {
     no_rating.push(article);
   }
 });
+console.log(combined_articles);
 
 function App() {
   // REMEMBER: You can repeat this process for the sources page
@@ -68,6 +70,7 @@ function App() {
           <Route path="center" element={<Center />} />
           <Route path="right" element={<Right />} />
           <Route path="search" element={<SearchResults />} />
+          <Route path="sources" element={<Sources />} />
         </Routes>
       </div>
     </div>
