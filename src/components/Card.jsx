@@ -1,4 +1,5 @@
 import React from "react";
+import '../App.css';
 
 export default function Card(props) {
   return (
@@ -13,7 +14,7 @@ export default function Card(props) {
           <a href={`${props.link}`} target="_blank" class={`${props.textColor} a-${props.textColor}`}>
             <h5 class="card-title">{props.title}</h5>
           </a>
-          <p class="card-text">
+          <p class={`card-text ${props.textColor}`}>
             {props.excerpt}
           </p>
           <p class="card-text">

@@ -51,10 +51,9 @@
   margin: 8px;
 }
 
-.card:hover {
-  cursor: pointer;
+/* .card:hover {
 	transform: scale(1.1);
-}
+} */
 
 .a-border-primary {
   color: #0d6efd;
@@ -62,4 +61,12 @@
 
 .a-border-danger {
   color: #dc3545;
+}
+
+.text-indigo {
+  color: var(--bs-indigo);
+}
+
+.border-indigo {
+  border-color: var(--bs-indigo);
 }

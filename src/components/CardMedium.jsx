@@ -3,6 +3,7 @@ import React from "react";
 export default function CardMedium(props) {
   return (
     <>
+    <div class="col">
       <div class={`card ${props.border} ${props.textColor}`}>
         <div class="placeholder">
           <img
@@ -28,6 +29,7 @@ export default function CardMedium(props) {
             <small class="text-muted">{props.source}</small>
           </p>
         </div>
+      </div>
       </div>
     </>
   );

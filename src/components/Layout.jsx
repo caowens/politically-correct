@@ -8,8 +8,8 @@ export default function Layout(props) {
         <div className='container-1'>
         <div className='box-1'>
         <CardLong
-            border={props.articles[1].rating.includes('left') ? 'border-primary' : props.articles[1].rating.includes('right') && 'border-danger'}
-            textColor={props.articles[1].rating.includes('left') ? 'text-primary' : props.articles[1].rating.includes('right') && 'text-danger'}
+            border={props.articles[1].rating.includes('left') ? 'border-primary' : props.articles[1].rating.includes('right') ? 'border-danger' : props.articles[1].rating.includes('center') && 'border-indigo'}
+            textColor={props.articles[1].rating.includes('left') ? 'text-primary' : props.articles[1].rating.includes('right') ? 'text-danger' : props.articles[1].rating.includes('center') && 'text-indigo'}
             title={props.articles[1].title}
             img={props.articles[1].media}
             excerpt={props.articles[1].summary}
@@ -24,12 +24,14 @@ export default function Layout(props) {
             excerpt={props.articles[0].excerpt}
             source={props.articles[0].clean_url}
             link={props.articles[0].link}
+            border={props.articles[0].rating.includes('left') ? 'border-primary' : props.articles[1].rating.includes('right') ? 'border-danger' : props.articles[1].rating.includes('center') && 'border-indigo'}
+            textColor={props.articles[0].rating.includes('left') ? 'text-primary' : props.articles[1].rating.includes('right') ? 'text-danger' : props.articles[1].rating.includes('center') && 'text-indigo'}
           />
         </div>
         <div className='box-3'>
         <CardLong
-            border={props.articles[2].rating.includes('left') ? 'border-primary' : props.articles[2].rating.includes('right') && 'border-danger'}
-            textColor={props.articles[2].rating.includes('left') ? 'text-primary' : props.articles[2].rating.includes('right') && 'text-danger'}
+            border={props.articles[2].rating.includes('left') ? 'border-primary' : props.articles[1].rating.includes('right') ? 'border-danger' : props.articles[1].rating.includes('center') && 'border-indigo'}
+            textColor={props.articles[2].rating.includes('left') ? 'text-primary' : props.articles[1].rating.includes('right') ? 'text-danger' : props.articles[1].rating.includes('center') && 'text-indigo'}
             title={props.articles[2].title}
             img={props.articles[2].media}
             excerpt={props.articles[2].summary}
