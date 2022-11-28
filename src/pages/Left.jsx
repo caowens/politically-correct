@@ -44,7 +44,7 @@ export default function Left() {
             textColor="text-primary"
             title={left[4].title}
             img={left[4].media}
-            excerpt={left[4].excerpt}
+            excerpt={left[4].summary}
             source={left[4].clean_url}
             link={left[4].link}
           />

@@ -21,7 +21,7 @@ export default function Layout(props) {
         <Card
             title={props.articles[0].title}
             img={props.articles[0].media}
-            excerpt={props.articles[0].excerpt}
+            excerpt={props.articles[0].summary}
             source={props.articles[0].clean_url}
             link={props.articles[0].link}
             border={props.articles[0].rating.includes('left') ? 'border-primary' : props.articles[1].rating.includes('right') ? 'border-danger' : props.articles[1].rating.includes('center') && 'border-indigo'}

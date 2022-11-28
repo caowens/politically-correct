@@ -66,7 +66,7 @@ export default function Right() {
             textColor="text-danger"
             title={right[4].title}
             img={right[4].media}
-            excerpt={right[4].excerpt}
+            excerpt={right[4].summary}
             source={right[4].clean_url}
             link={right[4].link}
           />

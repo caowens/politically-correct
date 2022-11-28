@@ -3,7 +3,7 @@ import React from "react";
 export default function CardLong(props) {
   return (
     <>
-      <div className={`card ${props.border}`}>
+      <div className={`card ${props.border} h-100`}>
         <img
           src={
             `${props.img}`

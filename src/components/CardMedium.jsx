@@ -4,7 +4,7 @@ export default function CardMedium(props) {
   return (
     <>
     <div class="col">
-      <div class={`card ${props.border} ${props.textColor}`}>
+      <div class={`card ${props.border} ${props.textColor} h-100`}>
         <div class="placeholder">
           <img
             src={
